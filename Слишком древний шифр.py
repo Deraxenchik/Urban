@@ -5,6 +5,9 @@ def password(n):
             if n % (i + j) == 0:
                 result += str(i) + str(j)
     return result
-
 print('Введите число: ')
-print(password(int(input())))
+n = int(input())
+if 3 <= n <= 20:
+    print('Пароль: ', password(n))
+else:
+    print('Неверное значение')
